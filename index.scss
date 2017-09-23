@@ -1,0 +1,45 @@
+.trade-rec {
+  display: flex;
+  height: 2rem;
+  align-items: center;
+  .left {
+    flex: 75;
+    height: 1rem;
+    line-height: 1rem;
+    font-size: 0.6rem;
+    text-align: center;
+    border-right: 1px solid $color-border;
+    img {
+      width: 80%;
+      display: inline-block;
+    }
+  }
+  .right {
+    flex: 298;
+    position: relative;
+    i {
+      position: absolute;
+      left: 0.4rem;
+      font-size: 0.6rem;
+      line-height: 1rem;
+      color: $color-active;
+    }
+    .texts {
+      height: 1rem;
+      padding-left: 1.4rem;
+      overflow: hidden;
+      p {
+        margin: 0;
+        line-height: 1rem;
+        color: $gray;
+        font-size: 0.6rem;
+        margin-top: 0;
+        transition: all 0.5s linear;
+        background: rgba(0,0,0,0);
+        &.slide {
+          margin-top: -1rem;
+        }
+      }
+    }
+  }
+}
